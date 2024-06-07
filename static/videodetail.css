@@ -1,35 +1,44 @@
-@import url(/forms.css);
-@import url(/videolist.css);
-@import url(/videodetail.css);
-@import url(/header.css);
-
-/* Reset de CSS básico para asegurar consistencia entre navegadores */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.video-detail-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100vh;
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
+.video-frame {
+  width: 100%;
+  margin-bottom: 1.5rem;
 }
 
-.register-link {
-  margin-top: 1rem;
-  font-size: 0.9rem;
+.video-detail-title {
+  font-size: 1.8rem;
+  color: #333333;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
-.register-link a {
-  color: #007bff;
+.video-detail-description {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 1.5rem;
+}
+
+.back-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
   text-decoration: none;
-  transition: color 0.3s;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1.5rem;
 }
 
-.register-link a:hover {
-  color: #0056b3;
+.back-button:hover {
+  background-color: #0056b3;
 }

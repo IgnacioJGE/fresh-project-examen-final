@@ -16,7 +16,13 @@ export const handler: Handlers = {
         const userid=decodedtoken.id;
         return ctx.render({data,name,userid})
     } catch (error) {
-        return ctx.render()
+      const headers = new Headers();
+
+      headers.set("location", "/login");
+      return new Response(null, {
+        status: 303, // See Other
+        headers,
+      });
     }
 
   },
