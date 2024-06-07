@@ -1,4 +1,6 @@
 import ButtonFav from "../islands/buttonfav.tsx"
+import Logout from "../islands/logoutbutton.tsx"
+
 
 export type video={
 title:string,
@@ -29,7 +31,7 @@ export default function CompVideos(props:propsVideos){
             <header class="header-container">
                 <div class="header-content">
                     <span class="user-name">{props.name}</span>
-                    <a class="logout-button">Logout</a>
+                    <Logout/>
                 </div>
             </header>
             <div class="video-page-container">

@@ -4,6 +4,7 @@ import CompVideos from "../components/VideosComp.tsx"
 import jwt from "npm:jsonwebtoken"
 import {setCookie,getCookies} from "$std/http/cookie.ts"
 
+
 export const handler: Handlers = {
   async GET(req, ctx) {
     try {

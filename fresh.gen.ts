@@ -13,6 +13,7 @@ import * as $video_videoid_ from "./routes/video/[videoid].tsx";
 import * as $videos from "./routes/videos.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import * as $buttonfav from "./islands/buttonfav.tsx";
+import * as $logoutbutton from "./islands/logoutbutton.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -30,6 +31,7 @@ const manifest = {
   islands: {
     "./islands/Counter.tsx": $Counter,
     "./islands/buttonfav.tsx": $buttonfav,
+    "./islands/logoutbutton.tsx": $logoutbutton,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
