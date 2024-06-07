@@ -5,7 +5,7 @@ import jwt from "npm:jsonwebtoken"
 import {setCookie} from "$std/http/cookie.ts"
 
 export const handler: Handlers = {
-  async GET(req, ctx) {
+   GET(req, ctx) {
     return ctx.render()
   },
   async POST(req, ctx) {
