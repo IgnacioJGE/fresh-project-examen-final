@@ -33,7 +33,7 @@ export default function ButtonFav(props:propsfav){
     }
 
     return(
-        <button class="fav-button" onClick={()=>handleclick}>{texto}</button>
+        <button class="fav-button" onClick={()=>handleclick()}>{texto}</button>
 
     )
 
